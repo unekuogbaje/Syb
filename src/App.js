@@ -5,6 +5,7 @@ import LoginForm from './components/LoginForm';
 import './App.css';
 
 function App() {
+  if(!localStorage.getItem('username')) return <LoginForm/>
   return (
     <div className="App">
       <ChatEngine
